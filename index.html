@@ -25,6 +25,18 @@
    <div class="image-container">
     <img src="Rugelache.jpg" alt="A tray of Rugelache, thats in order, and in a grid">
 </div>
+    .cropped-image-container {"Rugelache.jpg"
+  width: 800px;  /* Desired width of the cropped area */
+  height: 500px; /* Desired height of the cropped area */
+  overflow: hidden; /* Hides the overflowing parts */
+}
+
+.cropped-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops the image to fit the container while maintaining aspect ratio */
+}
+
     <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
